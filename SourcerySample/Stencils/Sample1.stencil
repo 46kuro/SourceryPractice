@@ -1,0 +1,5 @@
+{% for type in types.classes %}
+// sourcery:inline:{{ type.name }}.TemplateName
+{{ type }}
+// sourcery:end
+{% endfor %}
