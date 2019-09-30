@@ -1,38 +1,9 @@
 {% for type in types.classes %}
 // sourcery:inline:{{ type.name }}.TemplateName
-{% for key, value in argument %}
-{% if value == "String" %}
-@IBOutlet private var {{ key }}Label: UILabel!
-{% endif %}
-{% if value == "Image" %}
-@IBOutlet private var {{ key }}ImageView: UIImageView!
-{% endif %}
-{% endfor %}
-{% for key, value in argument %}
-{% if value == "String" %}
+{{ argument }}
 
-public var {{ key }}: String? {
-    get {
-        {{ key }}Label.text
-    }
-    set {
-        {{ key }}Label.text = newValue
-        {{ key }}Label.isHidden = newValue == nil 
-    }
-}
-{% endif %}
-{% if value == "Image" %}
-
-public var {{ key }}: UIImage? {
-    get {
-        {{ key }}Label.text
-    }
-    set {
-        {{ key }}Label.text = newValue
-        {{ key }}Label.isHidden = newValue == nil 
-    }
-}
-{% endif %}
-{% endfor %}
+    {% for key, value in argument %}
+    {{ key }}: {{value}}
+    {% endfor %}
 // sourcery:end
 {% endfor %}
