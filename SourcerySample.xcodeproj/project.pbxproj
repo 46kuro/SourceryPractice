@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D41A8CEF23422A0800A93ADD /* Sample3.stencil in Resources */ = {isa = PBXBuildFile; fileRef = D41A8CEE23422A0800A93ADD /* Sample3.stencil */; };
 		D4F88CA4233E39F800962A65 /* SourcerySample.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F88CA2233E39F800962A65 /* SourcerySample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4F88CAC233E3A7D00962A65 /* Sample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F88CAB233E3A7D00962A65 /* Sample1.swift */; };
 		D4F88CB1233E3B2D00962A65 /* Sample2.stencil in Resources */ = {isa = PBXBuildFile; fileRef = D4F88CB0233E3B2D00962A65 /* Sample2.stencil */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D41A8CEE23422A0800A93ADD /* Sample3.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Sample3.stencil; sourceTree = "<group>"; };
 		D4F88C9F233E39F800962A65 /* SourcerySample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SourcerySample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F88CA2233E39F800962A65 /* SourcerySample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourcerySample.h; sourceTree = "<group>"; };
 		D4F88CA3233E39F800962A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			children = (
 				D4F88CAE233E3A8F00962A65 /* Sample1.stencil */,
 				D4F88CB0233E3B2D00962A65 /* Sample2.stencil */,
+				D41A8CEE23422A0800A93ADD /* Sample3.stencil */,
 			);
 			path = Stencils;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41A8CEF23422A0800A93ADD /* Sample3.stencil in Resources */,
 				D4F88CB1233E3B2D00962A65 /* Sample2.stencil in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
