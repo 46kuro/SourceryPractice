@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		D47EFC9E2346057E00FF90F0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47EFC9D2346057E00FF90F0 /* main.swift */; };
+		D47EFCA923462A3C00FF90F0 /* Commander in Frameworks */ = {isa = PBXBuildFile; productRef = D47EFCA823462A3C00FF90F0 /* Commander */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47EFCA923462A3C00FF90F0 /* Commander in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = SampleCommandLineTool;
+			packageProductDependencies = (
+				D47EFCA823462A3C00FF90F0 /* Commander */,
+			);
 			productName = SampleCommandLineTool;
 			productReference = D47EFC9A2346057E00FF90F0 /* SampleCommandLineTool */;
 			productType = "com.apple.product-type.tool";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = D47EFC912346057E00FF90F0;
+			packageReferences = (
+				D47EFCA723462A3C00FF90F0 /* XCRemoteSwiftPackageReference "Commander" */,
+			);
 			productRefGroup = D47EFC9B2346057E00FF90F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,6 +324,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D47EFCA723462A3C00FF90F0 /* XCRemoteSwiftPackageReference "Commander" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylef/Commander.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D47EFCA823462A3C00FF90F0 /* Commander */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D47EFCA723462A3C00FF90F0 /* XCRemoteSwiftPackageReference "Commander" */;
+			productName = Commander;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D47EFC922346057E00FF90F0 /* Project object */;
 }
